@@ -2,10 +2,12 @@
 - name: pull mini_project image
   hosts: all
   tasks:
-          - name: Pull junit devops image 
-            docker_image:
-                  name: adityakaka/calci
-                  source: pull
+
+          - name: pull the image
+            servive:
+              name: docker
+              source: started
+
 
           - name: pull the image
             docker_image:

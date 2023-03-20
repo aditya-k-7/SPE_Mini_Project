@@ -1,6 +1,12 @@
 import java.util.Scanner;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Scientific_Calculator {
+
+
+    private static final Logger logger = LogManager.getLogger(Scientific_Calculator.class);
+
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -51,14 +57,22 @@ public class Scientific_Calculator {
     }
 
     public static double squareRoot(double number) {
+
+        logger.info("[SQRT] - " + number);
+        logger.info("[RESULT - SQRT] - " + Math.sqrt(number));
         return Math.sqrt(number);
+
     }
 
     public static double logarithm(double number) {
+        logger.info("[LOG] - " + number);
+        logger.info("[RESULT - LOG] - " + Math.log(number));
         return Math.log(number);
     }
 
     public static double power(double base, double exponent) {
+        logger.info("[POWER] - " + base + ", " + exponent);
+        logger.info("[RESULT - POWER] - " + Math.pow(base, exponent));
         return Math.pow(base, exponent);
     }
 
@@ -72,6 +86,9 @@ public class Scientific_Calculator {
         for (int i = 1; i <= number; i++) {
             result *= i;
         }
+
+        logger.info("[FACTORIAL] - " + number);
+        logger.info("[RESULT - FACTORIAL] - " + result);
 
         return result;
     }
