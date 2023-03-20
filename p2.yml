@@ -3,7 +3,7 @@
   hosts: all
   tasks:
 
-          - name: pull the image
+          - name: start docker service
             servive:
               name: docker
               source: started
