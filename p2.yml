@@ -3,11 +3,6 @@
   hosts: all
   tasks:
 
-          - name: start docker service
-            servive:
-              name: docker
-              source: started
-
 
           - name: pull the image
             docker_image:
