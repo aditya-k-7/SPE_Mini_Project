@@ -4,13 +4,13 @@
   tasks:
           - name: Pull junit devops image 
             docker_image:
-                  name: aditya-k-7/SPE_Mini_Project
+                  name: adityakaka/calci
                   source: pull
 
           - name: pull the image
             docker_image:
-                name: aditya-k-7/SPE_Mini_Project
+                name: adityakaka/calci
                 source: pull
 
           - name: creating updated container
-            shell: docker run -id aditya-k-7/SPE_Mini_Project
+            shell: docker run -id adityakaka/calci
