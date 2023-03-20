@@ -15,7 +15,7 @@ public class Factorial_Test {
         int num2 = 0;
         int expectedResult2 = 1;
         assertEquals(expectedResult2, Scientific_Calculator.factorial(num2));
-        
+
     }
 
 }
