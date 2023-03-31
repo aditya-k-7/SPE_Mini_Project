@@ -7,8 +7,8 @@ public class Factorial_Test {
     @Test
     public void testFactorial() {
         // Test case 1: Factorial of positive number
-        int num1 = 4;
-        int expectedResult1 = 24;
+        int num1 = 5;
+        int expectedResult1 = 120;
         assertEquals(expectedResult1, Scientific_Calculator.factorial(num1));
 
         // Test case 2: Factorial of zero
